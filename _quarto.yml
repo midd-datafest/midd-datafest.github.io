@@ -1,0 +1,79 @@
+project:
+  type: website
+  pre-render: build_carousel2.R
+
+website:
+  title: "ASA DataFest"
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "DATAFEST 2026 IS A GO! USE THE 2026 TAB TO LEARN MORE. SEE YOU ON SATURDAY 04/18!"
+    type: primary
+    position: below-navbar
+  navbar:
+    logo: figures/midd_shield.png
+    logo-alt: "Middlebury College"
+    logo-href: https://www.middlebury.edu
+    search: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: "2026"
+        href: years/2026/about.qmd
+      - text: "2025"
+        href: years/2025/about.qmd
+    tools:
+      - icon: envelope-at
+        href: mailto:cstratton@middlebury.edu
+
+  sidebar:
+    - id: year-2026
+      title: "DataFest 2026"
+      contents:
+        - text: "Home"
+          href: index.qmd
+        - text: "---"
+        - text: About
+          href: years/2026/about.qmd
+        - text: Register
+          href: years/2026/register.qmd
+        - text: Schedule
+          href: years/2026/schedule.qmd
+        - text: Volunteer sign-up
+          href: years/2026/volunteers.qmd
+        # - text: Data access
+        #   href: years/2026/data.qmd
+        # - text: Room assignment
+        #   href: years/2026/room_assign.qmd
+
+    - id: year-2025
+      title: "DataFest 2025"
+      contents:
+        - text: "Home"
+          href: index.qmd
+        - text: "---"
+        - text: About
+          href: years/2025/about.qmd
+        - text: Register
+          href: years/2025/register.qmd
+        - text: Schedule
+          href: years/2025/schedule.qmd
+        - text: Volunteer sign-up
+          href: years/2025/volunteers.qmd
+        - text: Data access
+          href: years/2025/data.qmd
+        - text: Room assignment
+          href: years/2025/room_assign.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true
+
+execute:
+  freeze: auto
+
+
+# quarto render
+# quarto publish gh-pages
