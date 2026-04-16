@@ -5,7 +5,13 @@
 
 Students are encouraged to register for the event via the Google form below. We will facilitate forming of new groups during the event for those who cannot find a team prior to the event. 
 
-<a href="https://forms.gle/HGhTqkWNAgynK6deA" class="btn btn-primary" color="gold">Link to Google form</a>
+<a href="https://forms.gle/HGhTqkWNAgynK6deA" class="btn btn-primary" color="gold">Individual registration link</a>
+
+## Group registration
+
+Groups wishing to present on Sunday are **required** to register via the link below. 
+
+<a href="https://forms.gle/UenandxHWUNweRqB8" class="btn btn-primary" color="gold">Group registration link</a>
 
 <!-- ## Team registration for presentations -->
 

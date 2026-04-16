@@ -8,7 +8,7 @@ sidebar: false
 
 The [American Statistical Association (ASA) DataFest](https://ww2.amstat.org/education/datafest/) is a celebration of data in which teams of students work around the clock to find and share meaning in a large, rich, and complex data set. The event is open to students of all backgrounds, and provides an opportunity to gain hands-on experience with real-world data. Photos from previous events are provided below. 
 
-<a href="https://forms.gle/HGhTqkWNAgynK6deA" class="btn btn-primary" color="gold">Link to Registration form</a>
+<a href="https://forms.gle/UenandxHWUNweRqB8" class="btn btn-primary" color="gold">Group registration link</a>
 
 ```{=html}
 {{< include carousel_tabs.html >}}
