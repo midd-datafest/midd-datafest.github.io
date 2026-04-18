@@ -3,26 +3,37 @@
 
 ## Data
 
-### Disclaimers
-
 The following is provided verbatim from the American Statistical Association:
 
-Data provided by Savill's for this DataFest project are not public. These data are proprietary and are only to be used for the purposes of the American Statistical Association’s DataFest. By using this data, you agree to:
+### Rules for generative AI use
 
-1. During participation in ASA's DataFest, store and manage the data securely and privately. This means you may NOT upload the data to websites that may provide access to the data to anyone other than yourselves. (For example, if using Tableau, Github, ChatGPT, make sure privacy settings prevent others from seeing or accessing the data.) If you are not sure, then don't use that service! (Note: Rstudio Cloud does not have access to your data and so you can use it.)
+Be aware that many generative AI models, particularly free or publicly available versions, use your prompts and inputs to train. If you input DataFest data into these models, you are breaking the proprietary notification (see below). To protect the data, you are required to abide by these guidelines.
+
+1. Do not upload, paste, or otherwise input any portion of the DataFest datasets provided to you into any generative AI product. This includes free chatbots, online modeling tools, or any platform whose data-handling policies you cannot verify.
+
+2. You may only use generative AI models that do not store your input or use it for training their models. Most generative AI products licensed by universities and colleges meet this condition. Check with your institution to verify. If you are participating in a DataFest that is off-site from your institution, then you may be required to use a VPN to access your institution's licensed versions of these AI models.
+
+3. If using coding assistants (e.g., GitHub Copilot for R or Python), do not type, print, display, or preview any portion of the dataset in the script, source, or prompt window of the AI assistant. Use these tools only for general coding support (e.g., syntax help, debugging patterns), not for data-driven suggestions that would require the model to see the data. 
+
+### Disclaimers
+
+Data for DataFest is not public. These data are proprietary and are only to be used for the purpose of the American Statistical Association’s DataFest.
+By using this data, you agree to the following:
+
+1. During participation in ASA's DataFest, store and manage the data securely and privately. This means you may NOT upload the data to websites that may provide access to the data to anyone other than yourselves. (For example, if using Tableau or GitHub, make sure privacy settings prevent others from seeing or accessing the data.) If you are not sure, then don't use that service! (Note: RStudio Cloud does not have access to your data; therefore, you can use it.)
 
 2. Erase all data after your ASA's DataFest participation is complete.
 
-3. Not identify or attempt to identify the information contained in the dataset, nor contact any of the individuals whose information is contained in the dataset.
+3. Do not identify or attempt to identify the people whose information is contained in the dataset, nor contact any of the individuals whose information is contained in the dataset.
 
 4. Comply with all applicable U.S. federal and state laws and regulations relating to the maintenance of the dataset, the safeguarding of the confidentiality of the dataset, and the use and disclosure of the dataset.
 
-5. Not publish results of your analysis of the data except that the final products of the competetion (video, slide deck, one-page summary) may be displayed on team members' websites and on campus ASA DataFest websites.
+5. Do not publish results of your analysis of the data, except that the final products of the competition (video, slide deck, one-page summary) may be displayed on team members' websites and on campus ASA DataFest websites.
 
-6. Not share the data with anyone who is not a participant of ASA DataFest.
+6. Do not share the data with anyone who is not an ASA DataFest participant.
 
-Finally, please do NOT reveal the source of the data or any features of the data to ANYONE before May 3. This will ensure that all ASA DataFest participants around the globe have the same experience with the data as you. This means to not post anything to social media that might reveal clues, and to make sure that public github repositories are not discoverable (and if they are, that identifying work is removed).
+Finally, please do NOT reveal the source or any features of the data to ANYONE before May 2. This will ensure that all ASA DataFest participants around the globe have the same experience with the data as you. This means not posting anything to social media that might reveal clues, and ensuring that public GitHub repositories are not discoverable (and, if they are, that identifying work is removed).
 
 ### Access
 
-All data files are provided via Google drive: [here](https://drive.google.com/drive/folders/1TMgQTMTkAWM72i2yW8BevfgPlMxIYmMz?usp=drive_link). Note that you must use your Middlebury email address to access this file.  
+All data files are provided via Google drive: [here](https://drive.google.com/drive/folders/1BGWGaYOT_ZQf_IqlvCsDS0GaoLLFplLa?usp=drive_link). Note that you must use your Middlebury email address to access this file.  
