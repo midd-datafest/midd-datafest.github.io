@@ -11,9 +11,7 @@ Be aware that many generative AI models, particularly free or publicly available
 
 1. Do not upload, paste, or otherwise input any portion of the DataFest datasets provided to you into any generative AI product. This includes free chatbots, online modeling tools, or any platform whose data-handling policies you cannot verify.
 
-2. You may only use generative AI models that do not store your input or use it for training their models. Most generative AI products licensed by universities and colleges meet this condition. Check with your institution to verify. If you are participating in a DataFest that is off-site from your institution, then you may be required to use a VPN to access your institution's licensed versions of these AI models.
-
-3. If using coding assistants (e.g., GitHub Copilot for R or Python), do not type, print, display, or preview any portion of the dataset in the script, source, or prompt window of the AI assistant. Use these tools only for general coding support (e.g., syntax help, debugging patterns), not for data-driven suggestions that would require the model to see the data. 
+2. If using coding assistants (e.g., GitHub Copilot for R or Python), do not type, print, display, or preview any portion of the dataset in the script, source, or prompt window of the AI assistant. Use these tools only for general coding support (e.g., syntax help, debugging patterns), not for data-driven suggestions that would require the model to see the data. 
 
 ### Disclaimers
 
