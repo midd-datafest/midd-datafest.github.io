@@ -7,7 +7,7 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "DATAFEST 2026 IS A GO! USE THE 2026 TAB TO LEARN MORE. SEE YOU ON SATURDAY 04/18!"
+    content: "DATAFEST 2026 IS LIVE! MEET US IN THE Q CENTER IN BI-HALL!"
     type: primary
     position: below-navbar
   navbar:
@@ -41,8 +41,8 @@ website:
           href: years/2026/register.qmd
         - text: Volunteer sign-up
           href: years/2026/volunteers.qmd
-        # - text: Data access
-        #   href: years/2026/data.qmd
+        - text: Data access
+          href: years/2026/data.qmd
         # - text: Room assignment
         #   href: years/2026/room_assign.qmd
 
