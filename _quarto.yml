@@ -7,7 +7,9 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "DATAFEST 2026 IS LIVE! MEET US IN THE Q CENTER IN BI-HALL!"
+    # content: "Presentations will begin at 12:00 pm. See the room assignment tab for your location. Please notify Christian Stratton (cstratton@middlebury.edu) if you would like to make changes to your group."
+    # content: "Award ceremony will be held in Bi-Hall 216 at 1:30."
+    content: "DataFest 2026 has concluded. Thank you to all who participated! Stay tuned for photos."
     type: primary
     position: below-navbar
   navbar:
@@ -43,8 +45,8 @@ website:
           href: years/2026/volunteers.qmd
         - text: Data access
           href: years/2026/data.qmd
-        # - text: Room assignment
-        #   href: years/2026/room_assign.qmd
+        - text: Room assignment
+          href: years/2026/room_assign.qmd
 
     - id: year-2025
       title: "DataFest 2025"

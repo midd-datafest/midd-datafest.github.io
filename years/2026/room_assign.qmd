@@ -1,6 +1,10 @@
 ---
 ---
 
+```{r, include= F}
+library(kableExtra)
+```
+
 ## Room assignments
 
 The table below provides the room assignments. 
@@ -11,17 +15,61 @@ library(readr)
 library(tidyverse)
 teams <- read_csv("Team registration (Responses) - Form Responses 1.csv")
 
-# counts
-n219 <- floor(nrow(teams)/2)
-n104 <- nrow(teams) - n219
+n_rooms <- 4
+labels <- c("MBH 104", "MBH 219", "MBH 317", "MBH 403")
+assign_rooms <- function(teams, n_rooms, labels){
+  # important columns
+  tmp <- teams[,2:3]
+  names(tmp) <- c("Team Name", "Members")
+  
+  # add room assignment
+  rooms_full <- rep(1:n_rooms, ceiling(nrow(teams)/n_rooms))
+  actual_rooms <- rooms_full[1:nrow(tmp)]
+  tmp %>%
+    mutate(actual_rooms) %>%
+    left_join(
+      ., 
+      tibble(actual_rooms = 1:n_rooms, room = labels),
+      by = "actual_rooms"
+    ) %>%
+    dplyr::select(-actual_rooms) %>%
+    arrange(room)
+}
 
-set.seed(04062025)
-tibble(
-  team = teams[,2] %>% unlist() %>% unname(),
-  room = sample(c(rep("219", n219), rep("104", n104)), size = nrow(teams), replace = F)
+library(gt)
+set.seed(1800)
+assign_rooms(
+  teams, 
+  n_rooms = 4,
+  labels = c("MBH 104", "MBH 219", "MBH 317", "MBH 403")
 ) %>%
-  knitr::kable()
+  mutate(
+    room_group = as.numeric(factor(room)),
+    bg_color = ifelse(room_group %% 2 == 0, "#f2f2f2", "#ffffff")
+  ) %>%
+    select(-bg_color) %>%
+  gt() 
+  # tab_style(
+  #   style = cell_fill(color = "#f2f2f2"),
+  #   locations = cells_body(rows = room_group %% 2 == 0)
+  # ) %>%
+  # tab_style(
+  #   style = cell_fill(color = "#ffffff"),
+  #   locations = cells_body(rows = room_group %% 2 == 1)
+  # ) %>%
+  # cols_hide(columns = room_group) %>%
+  # opt_row_striping(row_striping = FALSE) %>%
+  # opt_table_outline(style = "none") %>%
+  # tab_options(
+  #   table.background.color = "transparent",
+  #   column_labels.background.color = "transparent"
+  # )
 
 
+```
 
+```{r, eval = F}
+# add 5 for two cases
+items <- strsplit(teams$`Please list the members of your team....3`, ",")
+sum(sapply(items, length)) + 5 + 2
 ```
